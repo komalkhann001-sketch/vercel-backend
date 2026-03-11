@@ -158,6 +158,42 @@ const products = [
         countInStock: 10,
         rating: 4.8,
         numReviews: 15
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Luminous Glow Serum",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256794/glow_serum4_ag1ftw.jpg",
+        description: "A potent radiance-boosting serum for an otherworldly, lit-from-within glow.",
+        brand: "Lumière Atelier",
+        category: "Serums",
+        price: 3200,
+        countInStock: 25,
+        rating: 4.9,
+        numReviews: 42
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Bakuchiol Plumping Essence",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256833/Eqqualberry_Bakuchiol_Plumping_Serum_uxge3x.jpg",
+        description: "A natural retinol alternative that plumps and rejuvenates the skin's texture.",
+        brand: "Lumière Atelier",
+        category: "Serums",
+        price: 4500,
+        countInStock: 15,
+        rating: 4.8,
+        numReviews: 28
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Madagascar Centella Ampoule",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256879/SKIN_1004_vz4awb.jpg",
+        description: "Pure Centella extract from Madagascar for deep calming and healing.",
+        brand: "Lumière Atelier",
+        category: "Serums",
+        price: 3800,
+        countInStock: 12,
+        rating: 5.0,
+        numReviews: 35
     }
 ];
 
