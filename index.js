@@ -52,6 +52,7 @@ const uploadRoutes = require('./routes/uploadRoutes');
 const Product = require('./models/productModel');
 const products = [
     {
+        user: "507f1f77bcf86cd799439011", // Dummy MongoDB ID
         name: "Glowing Skin Serum",
         image: "https://res.cloudinary.com/demo/image/upload/v1611000000/sample.jpg",
         description: "High-quality serum for glowing skin.",
@@ -63,6 +64,7 @@ const products = [
         numReviews: 12
     },
     {
+        user: "507f1f77bcf86cd799439011", // Dummy MongoDB ID
         name: "Organic Face Wash",
         image: "https://res.cloudinary.com/demo/image/upload/v1611000000/sample.jpg",
         description: "Natural ingredients for a fresh look.",
