@@ -12,7 +12,8 @@ const connectDB = require('./config/db');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
 dotenv.config();
-connectDB();
+console.log('Attempting to connect to MongoDB Atlas...');
+connectDB().then(() => console.log('DB Connection Attempt Finished.'));
 
 const app = express();
 
@@ -48,6 +49,42 @@ const orderRoutes = require('./routes/orderRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
 
 // Test Route
+const Product = require('./models/productModel');
+const products = [
+    {
+        name: "Glowing Skin Serum",
+        image: "https://res.cloudinary.com/demo/image/upload/v1611000000/sample.jpg",
+        description: "High-quality serum for glowing skin.",
+        brand: "Lumiere",
+        category: "Serums",
+        price: 2500,
+        countInStock: 10,
+        rating: 4.5,
+        numReviews: 12
+    },
+    {
+        name: "Organic Face Wash",
+        image: "https://res.cloudinary.com/demo/image/upload/v1611000000/sample.jpg",
+        description: "Natural ingredients for a fresh look.",
+        brand: "Lumiere",
+        category: "Cleansers",
+        price: 1200,
+        countInStock: 15,
+        rating: 4.8,
+        numReviews: 8
+    }
+];
+
+app.get('/api/seed-data-now', async (req, res) => {
+    try {
+        await Product.deleteMany();
+        await Product.insertMany(products);
+        res.send('Data Seeded Successfully into Atlas!');
+    } catch (error) {
+        res.status(500).send('Error seeding data: ' + error.message);
+    }
+});
+
 app.get('/', (req, res) => {
     res.send('API is running...');
 });
