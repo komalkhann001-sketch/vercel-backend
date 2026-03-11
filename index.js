@@ -66,7 +66,7 @@ const products = [
     {
         user: "507f1f77bcf86cd799439011", // Dummy MongoDB ID
         name: "Organic Face Wash",
-        image: "https://res.cloudinary.com/demo/image/upload/v1611000000/sample.jpg",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773255582/cleanser2.png_gb5dda.jpg",
         description: "Natural ingredients for a fresh look.",
         brand: "Lumiere",
         category: "Cleansers",
