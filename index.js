@@ -52,28 +52,112 @@ const uploadRoutes = require('./routes/uploadRoutes');
 const Product = require('./models/productModel');
 const products = [
     {
-        user: "507f1f77bcf86cd799439011", // Dummy MongoDB ID
-        name: "Glowing Skin Serum",
-        image: "https://res.cloudinary.com/demo/image/upload/v1611000000/sample.jpg",
-        description: "High-quality serum for glowing skin.",
-        brand: "Lumiere",
+        user: "507f1f77bcf86cd799439011",
+        name: "Essence of Seoul Serum",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256027/Korean_skincare_e3gkny.jpg",
+        description: "A meticulously crafted Korean essence for ultimate hydration and glass skin finish.",
+        brand: "Lumière Atelier",
         category: "Serums",
-        price: 2500,
-        countInStock: 10,
-        rating: 4.5,
+        price: 3500,
+        countInStock: 15,
+        rating: 4.9,
+        numReviews: 24
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Hyalu-Cica Sun Defense",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256042/HYALU-CICA_WATER-FIT_SUN_SERUM_SPF50_CENTELLA_agwldk.jpg",
+        description: "Water-fit sun serum with SPF50 and Centella for weightless protection.",
+        brand: "Lumière Atelier",
+        category: "Sun Care",
+        price: 2800,
+        countInStock: 20,
+        rating: 4.8,
+        numReviews: 18
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Botanical Glow Mask",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256055/Face_Masks_for_Glowing_Skin_nufpfm.jpg",
+        description: "An orchestral composition of botanical brilliance for an instant ethereal glow.",
+        brand: "Lumière Atelier",
+        category: "Masks",
+        price: 1500,
+        countInStock: 30,
+        rating: 4.7,
         numReviews: 12
     },
     {
-        user: "507f1f77bcf86cd799439011", // Dummy MongoDB ID
-        name: "Organic Face Wash",
-        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773255582/cleanser2.png_gb5dda.jpg",
-        description: "Natural ingredients for a fresh look.",
-        brand: "Lumiere",
+        user: "507f1f77bcf86cd799439011",
+        name: "Velvet Cleansing Milk",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256070/image3.png_y9blnu.jpg",
+        description: "A gentle yet powerful cleanser designed to honor the unique narrative of your skin.",
+        brand: "Lumière Atelier",
         category: "Cleansers",
-        price: 1200,
-        countInStock: 15,
+        price: 2200,
+        countInStock: 12,
+        rating: 4.6,
+        numReviews: 9
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Ethereal Sheet Mask",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256086/face_mask.png_k0fdyc.jpg",
+        description: "Ethically sourced molecular hydration for deep cellular repair.",
+        brand: "Lumière Atelier",
+        category: "Masks",
+        price: 850,
+        countInStock: 50,
+        rating: 4.9,
+        numReviews: 31
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Liquid Silk Toner",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256099/download_25_msj2nj.jpg",
+        description: "Purity distilled into a toner that transforms texture into liquid silk.",
+        brand: "Lumière Atelier",
+        category: "Toners",
+        price: 1900,
+        countInStock: 18,
+        rating: 4.5,
+        numReviews: 14
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Ceramide Barrier Cream",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256115/image2_ctqafu.jpg",
+        description: "Clinical devotion to your skin's barrier with advanced lipid delivery.",
+        brand: "Lumière Atelier",
+        category: "Moisturizers",
+        price: 4200,
+        countInStock: 8,
+        rating: 5.0,
+        numReviews: 7
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Aura Radiance Oil",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256141/Skincare_tddou1.jpg",
+        description: "Luminous molecular finish for an otherworldly radiance.",
+        brand: "Lumière Atelier",
+        category: "Face Oils",
+        price: 5500,
+        countInStock: 5,
+        rating: 4.9,
+        numReviews: 22
+    },
+    {
+        user: "507f1f77bcf86cd799439011",
+        name: "Moisture Surge Intense",
+        image: "https://res.cloudinary.com/dpxrf24v8/image/upload/v1773256166/CLINIQUE_moisture_surge_intense_dmgjqp.jpg",
+        description: "Deeply calibrated cellular hydration for extreme conditions.",
+        brand: "Lumière Atelier",
+        category: "Moisturizers",
+        price: 6800,
+        countInStock: 10,
         rating: 4.8,
-        numReviews: 8
+        numReviews: 15
     }
 ];
 
